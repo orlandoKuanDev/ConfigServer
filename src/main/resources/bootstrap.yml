@@ -1,0 +1,17 @@
+server:
+  port: 8090
+
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+            search-locations: file:///home/orlandokuan/Escritorio/work/config-data
+        git:
+          uri: https://github.com/orlandoKuanDev/bootcamp-everis-project
+          searchPaths: config-data
+          username: orlandojose.kuanbecerra@everis.nttdata.com
+          password: $$Anprog1
+          cloneOnStart: true
