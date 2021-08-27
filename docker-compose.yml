@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  web:
+    container_name: config-server
+    restart: always
+    build: .
+    ports:
+      - "8090:8090"
+    network_mode: host
